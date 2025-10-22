@@ -1,0 +1,21 @@
+---
+title: "Playwright E2E + GitHub Actions"
+date: "2025-10-01"
+summary: "Sharded Playwright on self-hosted runners with HTML summary, retries, and artifact uploads."
+tags: ["QA", "E2E", "CI/CD"]
+---
+
+## Goal
+
+Run fast, reliable E2E in CI with minimal flake.
+
+## Approach
+
+- Shard-aware Playwright config
+- Retries + trace on-retry
+- Upload HTML report to CI summary
+
+## Results
+
+- Runtime ↓ **40%**
+- Flake ↓ **70%**

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Keeping a Test Suite Healthy as Code Evolves",
+    "date": "2025-10-05T00:00:00.000Z",
+    "summary": "How to avoid brittle UI tests: IDs, contracts, visual diffs, and observability.",
+    "tags": [
+      "Testing",
+      "Best Practices"
+    ],
+    "draft": false,
+    "body": {
+      "raw": "\nShort, actionable rules I keep returning to:\n\n1. Prefer **data-test-id** over brittle selectors.\n2. Test **contracts** at the API layer.\n3. Use **visual snapshots** for layout-only assertions.\n4. Add **telemetry** so failing tests point to causes.",
+      "code": "var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var s in t)o(e,s,{get:t[s],enumerable:!0})},l=(e,t,s,i)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of m(t))!p.call(e,r)&&r!==s&&o(e,r,{get:()=>t[r],enumerable:!(i=g(t,r))||i.enumerable});return e};var v=(e,t,s)=>(s=e!=null?u(f(e)):{},l(t||!e||!e.__esModule?o(s,\"default\",{value:e,enumerable:!0}):s,e)),_=e=>l(o({},\"__esModule\",{value:!0}),e);var c=x((C,a)=>{a.exports=_jsx_runtime});var j={};y(j,{default:()=>h,frontmatter:()=>b});var n=v(c()),b={title:\"Keeping a Test Suite Healthy as Code Evolves\",date:\"2025-10-05\",summary:\"How to avoid brittle UI tests: IDs, contracts, visual diffs, and observability.\",tags:[\"Testing\",\"Best Practices\"]};function d(e){let t={li:\"li\",ol:\"ol\",p:\"p\",strong:\"strong\",...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t.p,{children:\"Short, actionable rules I keep returning to:\"}),`\n`,(0,n.jsxs)(t.ol,{children:[`\n`,(0,n.jsxs)(t.li,{children:[\"Prefer \",(0,n.jsx)(t.strong,{children:\"data-test-id\"}),\" over brittle selectors.\"]}),`\n`,(0,n.jsxs)(t.li,{children:[\"Test \",(0,n.jsx)(t.strong,{children:\"contracts\"}),\" at the API layer.\"]}),`\n`,(0,n.jsxs)(t.li,{children:[\"Use \",(0,n.jsx)(t.strong,{children:\"visual snapshots\"}),\" for layout-only assertions.\"]}),`\n`,(0,n.jsxs)(t.li,{children:[\"Add \",(0,n.jsx)(t.strong,{children:\"telemetry\"}),\" so failing tests point to causes.\"]}),`\n`]})]})}function h(e={}){let{wrapper:t}=e.components||{};return t?(0,n.jsx)(t,{...e,children:(0,n.jsx)(d,{...e})}):d(e)}return _(j);})();\n;return Component;"
+    },
+    "_id": "writing/keeping-test-suites-healthy.mdx",
+    "_raw": {
+      "sourceFilePath": "writing/keeping-test-suites-healthy.mdx",
+      "sourceFileName": "keeping-test-suites-healthy.mdx",
+      "sourceFileDir": "writing",
+      "contentType": "mdx",
+      "flattenedPath": "writing/keeping-test-suites-healthy"
+    },
+    "type": "Post",
+    "slug": "keeping-test-suites-healthy",
+    "url": "/writing/keeping-test-suites-healthy"
+  }
+]

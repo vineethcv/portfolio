@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      "contentlayer2/generated": ["./.contentlayer/generated"]
     }
   },
   "include": [

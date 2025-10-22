@@ -1,0 +1,13 @@
+---
+title: "Keeping a Test Suite Healthy as Code Evolves"
+date: "2025-10-05"
+summary: "How to avoid brittle UI tests: IDs, contracts, visual diffs, and observability."
+tags: ["Testing", "Best Practices"]
+---
+
+Short, actionable rules I keep returning to:
+
+1. Prefer **data-test-id** over brittle selectors.
+2. Test **contracts** at the API layer.
+3. Use **visual snapshots** for layout-only assertions.
+4. Add **telemetry** so failing tests point to causes.

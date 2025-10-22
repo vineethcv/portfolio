@@ -1,0 +1,65 @@
+{
+  "cacheItemsMap": {
+    "projects/playwright-github-actions.mdx": {
+      "document": {
+        "title": "Playwright E2E + GitHub Actions",
+        "date": "2025-10-01T00:00:00.000Z",
+        "summary": "Sharded Playwright on self-hosted runners with HTML summary, retries, and artifact uploads.",
+        "tags": [
+          "QA",
+          "E2E",
+          "CI/CD"
+        ],
+        "draft": false,
+        "body": {
+          "raw": "\n## Goal\n\nRun fast, reliable E2E in CI with minimal flake.\n\n## Approach\n\n- Shard-aware Playwright config\n- Retries + trace on-retry\n- Upload HTML report to CI summary\n\n## Results\n\n- Runtime ↓ **40%**\n- Flake ↓ **70%**",
+          "code": "var Component=(()=>{var u=Object.create;var l=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports),y=(r,n)=>{for(var t in n)l(r,t,{get:n[t],enumerable:!0})},h=(r,n,t,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let i of p(n))!g.call(r,i)&&i!==t&&l(r,i,{get:()=>n[i],enumerable:!(a=m(n,i))||a.enumerable});return r};var w=(r,n,t)=>(t=r!=null?u(f(r)):{},h(n||!r||!r.__esModule?l(t,\"default\",{value:r,enumerable:!0}):t,r)),_=r=>h(l({},\"__esModule\",{value:!0}),r);var s=x((M,o)=>{o.exports=_jsx_runtime});var E={};y(E,{default:()=>d,frontmatter:()=>C});var e=w(s()),C={title:\"Playwright E2E + GitHub Actions\",date:\"2025-10-01\",summary:\"Sharded Playwright on self-hosted runners with HTML summary, retries, and artifact uploads.\",tags:[\"QA\",\"E2E\",\"CI/CD\"]};function c(r){let n={a:\"a\",h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...r.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h2,{id:\"goal\",children:(0,e.jsx)(n.a,{href:\"#goal\",children:\"Goal\"})}),`\n`,(0,e.jsx)(n.p,{children:\"Run fast, reliable E2E in CI with minimal flake.\"}),`\n`,(0,e.jsx)(n.h2,{id:\"approach\",children:(0,e.jsx)(n.a,{href:\"#approach\",children:\"Approach\"})}),`\n`,(0,e.jsxs)(n.ul,{children:[`\n`,(0,e.jsx)(n.li,{children:\"Shard-aware Playwright config\"}),`\n`,(0,e.jsx)(n.li,{children:\"Retries + trace on-retry\"}),`\n`,(0,e.jsx)(n.li,{children:\"Upload HTML report to CI summary\"}),`\n`]}),`\n`,(0,e.jsx)(n.h2,{id:\"results\",children:(0,e.jsx)(n.a,{href:\"#results\",children:\"Results\"})}),`\n`,(0,e.jsxs)(n.ul,{children:[`\n`,(0,e.jsxs)(n.li,{children:[\"Runtime \\u2193 \",(0,e.jsx)(n.strong,{children:\"40%\"})]}),`\n`,(0,e.jsxs)(n.li,{children:[\"Flake \\u2193 \",(0,e.jsx)(n.strong,{children:\"70%\"})]}),`\n`]})]})}function d(r={}){let{wrapper:n}=r.components||{};return n?(0,e.jsx)(n,{...r,children:(0,e.jsx)(c,{...r})}):c(r)}return _(E);})();\n;return Component;"
+        },
+        "_id": "projects/playwright-github-actions.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/playwright-github-actions.mdx",
+          "sourceFileName": "playwright-github-actions.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/playwright-github-actions"
+        },
+        "type": "Project",
+        "slug": "playwright-github-actions",
+        "url": "/projects/playwright-github-actions"
+      },
+      "documentHash": "1761160633801",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "writing/keeping-test-suites-healthy.mdx": {
+      "document": {
+        "title": "Keeping a Test Suite Healthy as Code Evolves",
+        "date": "2025-10-05T00:00:00.000Z",
+        "summary": "How to avoid brittle UI tests: IDs, contracts, visual diffs, and observability.",
+        "tags": [
+          "Testing",
+          "Best Practices"
+        ],
+        "draft": false,
+        "body": {
+          "raw": "\nShort, actionable rules I keep returning to:\n\n1. Prefer **data-test-id** over brittle selectors.\n2. Test **contracts** at the API layer.\n3. Use **visual snapshots** for layout-only assertions.\n4. Add **telemetry** so failing tests point to causes.",
+          "code": "var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var s in t)o(e,s,{get:t[s],enumerable:!0})},l=(e,t,s,i)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of m(t))!p.call(e,r)&&r!==s&&o(e,r,{get:()=>t[r],enumerable:!(i=g(t,r))||i.enumerable});return e};var v=(e,t,s)=>(s=e!=null?u(f(e)):{},l(t||!e||!e.__esModule?o(s,\"default\",{value:e,enumerable:!0}):s,e)),_=e=>l(o({},\"__esModule\",{value:!0}),e);var c=x((C,a)=>{a.exports=_jsx_runtime});var j={};y(j,{default:()=>h,frontmatter:()=>b});var n=v(c()),b={title:\"Keeping a Test Suite Healthy as Code Evolves\",date:\"2025-10-05\",summary:\"How to avoid brittle UI tests: IDs, contracts, visual diffs, and observability.\",tags:[\"Testing\",\"Best Practices\"]};function d(e){let t={li:\"li\",ol:\"ol\",p:\"p\",strong:\"strong\",...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t.p,{children:\"Short, actionable rules I keep returning to:\"}),`\n`,(0,n.jsxs)(t.ol,{children:[`\n`,(0,n.jsxs)(t.li,{children:[\"Prefer \",(0,n.jsx)(t.strong,{children:\"data-test-id\"}),\" over brittle selectors.\"]}),`\n`,(0,n.jsxs)(t.li,{children:[\"Test \",(0,n.jsx)(t.strong,{children:\"contracts\"}),\" at the API layer.\"]}),`\n`,(0,n.jsxs)(t.li,{children:[\"Use \",(0,n.jsx)(t.strong,{children:\"visual snapshots\"}),\" for layout-only assertions.\"]}),`\n`,(0,n.jsxs)(t.li,{children:[\"Add \",(0,n.jsx)(t.strong,{children:\"telemetry\"}),\" so failing tests point to causes.\"]}),`\n`]})]})}function h(e={}){let{wrapper:t}=e.components||{};return t?(0,n.jsx)(t,{...e,children:(0,n.jsx)(d,{...e})}):d(e)}return _(j);})();\n;return Component;"
+        },
+        "_id": "writing/keeping-test-suites-healthy.mdx",
+        "_raw": {
+          "sourceFilePath": "writing/keeping-test-suites-healthy.mdx",
+          "sourceFileName": "keeping-test-suites-healthy.mdx",
+          "sourceFileDir": "writing",
+          "contentType": "mdx",
+          "flattenedPath": "writing/keeping-test-suites-healthy"
+        },
+        "type": "Post",
+        "slug": "keeping-test-suites-healthy",
+        "url": "/writing/keeping-test-suites-healthy"
+      },
+      "documentHash": "1761160656911",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Playwright E2E + GitHub Actions",
+  "date": "2025-10-01T00:00:00.000Z",
+  "summary": "Sharded Playwright on self-hosted runners with HTML summary, retries, and artifact uploads.",
+  "tags": [
+    "QA",
+    "E2E",
+    "CI/CD"
+  ],
+  "draft": false,
+  "body": {
+    "raw": "\n## Goal\n\nRun fast, reliable E2E in CI with minimal flake.\n\n## Approach\n\n- Shard-aware Playwright config\n- Retries + trace on-retry\n- Upload HTML report to CI summary\n\n## Results\n\n- Runtime ↓ **40%**\n- Flake ↓ **70%**",
+    "code": "var Component=(()=>{var u=Object.create;var l=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports),y=(r,n)=>{for(var t in n)l(r,t,{get:n[t],enumerable:!0})},h=(r,n,t,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let i of p(n))!g.call(r,i)&&i!==t&&l(r,i,{get:()=>n[i],enumerable:!(a=m(n,i))||a.enumerable});return r};var w=(r,n,t)=>(t=r!=null?u(f(r)):{},h(n||!r||!r.__esModule?l(t,\"default\",{value:r,enumerable:!0}):t,r)),_=r=>h(l({},\"__esModule\",{value:!0}),r);var s=x((M,o)=>{o.exports=_jsx_runtime});var E={};y(E,{default:()=>d,frontmatter:()=>C});var e=w(s()),C={title:\"Playwright E2E + GitHub Actions\",date:\"2025-10-01\",summary:\"Sharded Playwright on self-hosted runners with HTML summary, retries, and artifact uploads.\",tags:[\"QA\",\"E2E\",\"CI/CD\"]};function c(r){let n={a:\"a\",h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...r.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h2,{id:\"goal\",children:(0,e.jsx)(n.a,{href:\"#goal\",children:\"Goal\"})}),`\n`,(0,e.jsx)(n.p,{children:\"Run fast, reliable E2E in CI with minimal flake.\"}),`\n`,(0,e.jsx)(n.h2,{id:\"approach\",children:(0,e.jsx)(n.a,{href:\"#approach\",children:\"Approach\"})}),`\n`,(0,e.jsxs)(n.ul,{children:[`\n`,(0,e.jsx)(n.li,{children:\"Shard-aware Playwright config\"}),`\n`,(0,e.jsx)(n.li,{children:\"Retries + trace on-retry\"}),`\n`,(0,e.jsx)(n.li,{children:\"Upload HTML report to CI summary\"}),`\n`]}),`\n`,(0,e.jsx)(n.h2,{id:\"results\",children:(0,e.jsx)(n.a,{href:\"#results\",children:\"Results\"})}),`\n`,(0,e.jsxs)(n.ul,{children:[`\n`,(0,e.jsxs)(n.li,{children:[\"Runtime \\u2193 \",(0,e.jsx)(n.strong,{children:\"40%\"})]}),`\n`,(0,e.jsxs)(n.li,{children:[\"Flake \\u2193 \",(0,e.jsx)(n.strong,{children:\"70%\"})]}),`\n`]})]})}function d(r={}){let{wrapper:n}=r.components||{};return n?(0,e.jsx)(n,{...r,children:(0,e.jsx)(c,{...r})}):c(r)}return _(E);})();\n;return Component;"
+  },
+  "_id": "projects/playwright-github-actions.mdx",
+  "_raw": {
+    "sourceFilePath": "projects/playwright-github-actions.mdx",
+    "sourceFileName": "playwright-github-actions.mdx",
+    "sourceFileDir": "projects",
+    "contentType": "mdx",
+    "flattenedPath": "projects/playwright-github-actions"
+  },
+  "type": "Project",
+  "slug": "playwright-github-actions",
+  "url": "/projects/playwright-github-actions"
+}
