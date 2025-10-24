@@ -71,3 +71,44 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
+  deploy_prod:
+    name: Deploy to Vercel (prod)
+    needs: e2e
+    if: github.ref == 'refs/heads/main' && needs.e2e.result == 'success'
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      # Pull Vercel env (Production) to .vercel/
+      - name: Vercel pull (prod env)
+        run: npx vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+
+      # Build your Next app with Vercel (creates .vercel/output)
+      - name: Vercel build (prebuild on CI)
+        run: npx vercel build --prod --token=$VERCEL_TOKEN
+
+      # Deploy the prebuilt output to production
+      - name: Vercel deploy (production)
+        id: deploy
+        run: |
+          URL=$(npx vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN)
+          echo "url=$URL" >> $GITHUB_OUTPUT
+
+      - name: Echo deployed URL
+        run:  |
+          echo "Production deployed: ${{ steps.deploy.outputs.url }}"
