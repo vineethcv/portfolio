@@ -49,7 +49,7 @@ jobs:
 
   deploy-report:
     # Only deploy the report to Pages on pushes to main (avoid overwriting on PRs)
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: ${{ always() && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     needs: e2e
     runs-on: ubuntu-latest
     environment:
